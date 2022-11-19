@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root {
+  color-scheme: dark;
+}
+@font-face {
+  font-family: test;
+  src: url(assets/Capsmall_clean.ttf);
+}
+body {
+  font-family: test;
+}
+
+.main {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgb(159, 159, 159);
+  border-radius: 1rem;
+  padding: 1rem 0;
+  width: 100%;
+}
+.cells {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+.cell {
+  border: 2px solid;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.inputs {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  flex-direction: column;
+}
+input {
+  width: 15rem;
+  height: 2rem;
+  padding: 0.5rem;
+  padding-right: 0;
+  border: none;
+}
+button {
+  width: 3rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.inputs .row .cells {
+  transform: scale(0.7);
+  column-gap: 0.2rem;
+}
+.inBut {
+  display: flex;
+  row-gap: 0.5rem;
+}
+
+@media only screen and (max-width: 330px) {
+  input {
+    width: 12rem;
+  }
+}
